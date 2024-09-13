@@ -9,3 +9,7 @@ pip install matplotlib numpy Pillow scikit_learn
 
 ## Usage
 Place images in /images
+
+```
+$ python image_palette.py <image filename>
+```
