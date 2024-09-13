@@ -1,6 +1,6 @@
 # palettegen
 Author: Slate Colebank
-An image to 8-color palette generator written in Python
+An image to 8-color palette generator written in Python using KMeans clustering
 
 ## Installation
 ```
