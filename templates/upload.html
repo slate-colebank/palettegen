@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallete Generator</title>
+</head>
+<body>
+    <h1>Pallete Generator</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if image_url and palette_url%}
+    <div class="image_container">
+        <div>
+            <h2>Image:</h2>
+            <img src="{{ image_url }}" alt="Uploaded Image" style="max-width: 500px;">
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="image_container">
+        <div>
+            <h2>Color Palette:</h2>
+            <img src="{{ palette_url }}" alt="Color Palette" style="max-width:500px;">
+        </div>
+    </div>
+
+
+    {% endif %}
+</body>
+</html>
